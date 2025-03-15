@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Accessible Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="cart.html" tabindex="0">Cart</a></li>
+                <li><a href="profile.html" tabindex="0">Profile</a></li>
+                <li><a href="orders.html" tabindex="0">Orders</a></li>
+                <li><a href="payment.html" tabindex="0">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product Search -->
+        <section id="product-search">
+            <input type="text" id="searchBox" placeholder="Search products..." aria-label="Search products">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <!-- Product Filters -->
+        <section id="filters">
+            <h2 tabindex="0">Filter by Category</h2>
+            <button class="filter-btn" data-category="electronics" tabindex="0">Electronics</button>
+            <button class="filter-btn" data-category="clothing" tabindex="0">Clothing</button>
+            <button class="filter-btn" data-category="home" tabindex="0">Home & Kitchen</button>
+            <button class="filter-btn" data-category="beauty" tabindex="0">Beauty</button>
+        </section>
+
+        <!-- Product Listings -->
+        <section id="product-list">
+            <h2 tabindex="0">All Products</h2>
+            <div class="product-grid">
+                <div class="product" tabindex="0" data-category="electronics">
+                    <img src="product1.jpg" alt="Wireless Headphones">
+                    <p>Wireless Headphones - $49.99</p>
+                    <button class="add-to-cart" tabindex="0">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0" data-category="electronics">
+                    <img src="product2.jpg" alt="Smartphone">
+                    <p>Smartphone - $699.99</p>
+                    <button class="add-to-cart" tabindex="0">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0" data-category="home">
+                    <img src="product3.jpg" alt="Coffee Maker">
+                    <p>Coffee Maker - $89.99</p>
+                    <button class="add-to-cart" tabindex="0">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0" data-category="beauty">
+                    <img src="product4.jpg" alt="Skincare Set">
+                    <p>Skincare Set - $39.99</p>
+                    <button class="add-to-cart" tabindex="0">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="chatbot.js"></script>
+    <script src="voice-assistant.js"></script>
+    <script src="voice-navigation.js"></script>
+    <script src="talkback.js"></script>
+
+</body>
+</html>

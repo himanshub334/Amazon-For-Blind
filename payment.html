@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Accessible Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="cart.html" tabindex="0">Cart</a></li>
+                <li><a href="orders.html" tabindex="0">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="orderSummary">
+            <h2 tabindex="0">Order Summary</h2>
+            <p id="orderDetails" tabindex="0">Loading...</p>
+        </section>
+
+        <section id="paymentOptions">
+            <h2 tabindex="0">Select Payment Method</h2>
+            <label>
+                <input type="radio" name="paymentMethod" value="UPI" checked> UPI
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="Credit Card"> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="Cash on Delivery"> Cash on Delivery
+            </label>
+        </section>
+
+        <button id="confirmPaymentBtn">Confirm Payment</button>
+        <button id="voiceAssistantBtn">🎤 Use Voice</button>
+    </main>
+
+    <script src="payment.js"></script>
+    <script src="talkback.js"></script>
+
+</body>
+</html>

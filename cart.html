@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Accessible Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="orders.html" tabindex="0">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cartItems">
+            <h2 tabindex="0">Your Cart</h2>
+            <ul id="cartList">
+                <li tabindex="0">Wireless Headphones - $59.99 <button class="removeBtn">Remove</button></li>
+                <li tabindex="0">Smartphone - $499.99 <button class="removeBtn">Remove</button></li>
+            </ul>
+        </section>
+
+        <p id="totalPrice" tabindex="0">Total: $559.98</p>
+        <section id="cartItems">
+    <h2>Your Cart</h2>
+    <ul id="cartList"></ul>
+</section>
+
+
+        <button id="checkoutBtn">Proceed to Checkout</button>
+        <button id="voiceCartBtn">🎤 Use Voice</button>
+    </main>
+
+    <script src="cart.js"></script>
+    <script src="talkback.js"></script>
+
+</body>
+</html>

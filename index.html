@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amazon </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Amazon Clone</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html" tabindex="0">Products</a></li>
+                <li><a href="cart.html" tabindex="0">Cart</a></li>
+                <li><a href="orders.html" tabindex="0">Orders</a></li>
+                <li><a href="payment.html" tabindex="0">Payment</a></li>
+            </ul>
+        </nav>
+        <button id="voiceBtn">Enable Voice Assistant</button>
+        <button id="voiceSearchBtn">Voice Search</button>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h2 tabindex="0">Welcome to Accessible Amazon Clone</h2>
+            <p tabindex="0">Shop with ease using our voice-enabled assistant.</p>
+        </section>
+
+        <!-- Search Bar -->
+        <section id="search">
+            <input type="text" id="searchBox" placeholder="Search products..." aria-label="Search products">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2 tabindex="0">Categories</h2>
+            <div class="category-grid">
+                <div class="category" tabindex="0">Electronics</div>
+                <div class="category" tabindex="0">Clothing</div>
+                <div class="category" tabindex="0">Home & Kitchen</div>
+                <div class="category" tabindex="0">Beauty</div>
+                <div class="category" tabindex="0">Fitness</div>
+                <div class="category" tabindex="0">Books</div>
+                <div class="category" tabindex="0">Toys</div>
+                <div class="category" tabindex="0">Groceries</div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section id="deals">
+            <h2 tabindex="0">Today's Deals</h2>
+            <div class="deal-grid">
+                <div class="deal" tabindex="0">
+                    <img src="deal1.jpg" alt="Laptop with 20% off">
+                    <p>Gaming Laptop - 20% Off Price 30000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="deal" tabindex="0">
+                    <img src="deal2.jpg" alt="Smartwatch with 15% off">
+                    <p>Smartwatch - 15% Off</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="deal" tabindex="0">
+                    <img src="deal3.jpg" alt="Wireless Earbuds">
+                    <p>Wireless Earbuds - 30% Off</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="deal" tabindex="0">
+                    <img src="deal4.jpg" alt="4K Smart TV">
+                    <p>4K Smart TV - 25% Off</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="products">
+            <h2 tabindex="0">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product" tabindex="0">
+                    <img src="product1.jpg" alt="Wireless Headphones">
+                    <p>Wireless Headphones - $49.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0">
+                    <img src="product2.jpg" alt="Smartphone">
+                    <p>Smartphone - $699.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0">
+                    <img src="product3.jpg" alt="Fitness Band">
+                    <p>Fitness Band - $29.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" tabindex="0">
+                    <img src="product4.jpg" alt="Bluetooth Speaker">
+                    <p>Bluetooth Speaker - $39.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessibility Section -->
+        <section id="accessibility">
+            <h2 tabindex="0">Accessibility Features</h2>
+            <ul>
+                <li tabindex="0">Voice commands for shopping</li>
+                <li tabindex="0">Talk-back feature for screen reading</li>
+                <li tabindex="0">Keyboard navigation enabled</li>
+                <li tabindex="0">High contrast mode available</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="chatbotContainer"></div>
+
+    <script src="chatbot.js"></script>
+    <script src="voice-assistant.js"></script>
+    <script src="voice-navigation.js"></script>
+    <script src="talkback.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Accessible Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="products.html" tabindex="0">Products</a></li>
+                <li><a href="cart.html" tabindex="0">Cart</a></li>
+                <li><a href="orders.html" tabindex="0">Orders</a></li>
+            </ul>
+        </nav>
+        <button id="voiceAssistantBtn">Enable Voice Assistant</button>
+    </header>
+
+    <main>
+        <!-- Order Summary -->
+        <section id="orderSummary">
+            <h2 tabindex="0">Order Summary</h2>
+            <ul id="orderList">
+                <!-- Order items will be added dynamically -->
+            </ul>
+            <p id="totalAmount" tabindex="0">Total: $0</p>
+        </section>
+
+        <!-- Payment Methods -->
+        <section id="paymentMethods">
+            <h2 tabindex="0">Select Payment Method</h2>
+            <button class="paymentOption" data-method="Credit Card">Credit Card</button>
+            <button class="paymentOption" data-method="UPI">UPI</button>
+            <button class="paymentOption" data-method="Cash on Delivery">Cash on Delivery</button>
+        </section>
+
+        <button id="confirmPaymentBtn">Confirm Payment</button>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
